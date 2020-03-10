@@ -1,0 +1,521 @@
+
+@media only screen  and (max-width: 1650px) {
+    body::-webkit-scrollbar {
+        display: none;
+      }
+    body{
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+    }
+    #NavBarDiv{
+       
+        position: fixed;
+        width: 100%;
+        height:50px;
+        left:0;
+        top:0;
+        right:0;
+        background-color: black;
+        text-align: center;
+       
+      
+    }
+    #MobileNav{
+        display: none;
+    }
+    .NavItem{
+        display: inline-block;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        color:whitesmoke;
+        padding-top: 15px;
+        font-family: "Oxanium";
+        
+        transition: 0.5s ease;
+        
+    }
+    
+    
+    .NavItem > a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    .NavItem:hover{
+        border-bottom: whitesmoke 3px solid;
+        cursor: pointer;
+    }
+    #myVideo {
+            
+        position: fixed;
+        width: 100vw;
+       height: 100vh;
+       object-fit: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -15;
+     
+      }
+    
+      #mainview{
+          height: 100vh;
+          width:100vw;
+          left: 0;
+          top: 0;
+          position: fixed;
+          
+      }
+      #mainview.active {
+        opacity: 0;
+      }
+      #introContainer{
+          position: absolute;
+          top: 10%;
+          margin-left: auto;
+          margin-right: auto;
+          height: 80%;
+          width: 80%;
+          text-align: center;
+          background-color: rgba(115, 130, 146,0);
+          border-radius: 20px;
+    
+      }
+      #introPhoto{
+          height: 100%;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: inline-block;
+          border-radius: 20px;
+
+      }
+      #smallIntro{
+        background-color: rgba(115, 130, 146,0.6) ;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 10%;
+     
+        z-index:20;
+        font-family: 'Montserrat';
+        text-align: center;
+        width: 100%;
+      }
+      #photoMe{
+          height: 100%;
+          width: auto;
+          border-radius: 20px;
+          filter: drop-shadow();
+          -webkit-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+          -moz-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+          box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+      }
+      #introText{
+          box-sizing: border-box;
+        position: absolute;
+         display: none;
+        padding: 10px;
+        
+        text-align: justify;
+    
+      }
+      #NameTitle{
+    width: auto;
+      }
+      #NameTitle{
+          font-family: 'Oxanium';
+          color: rgb(182, 190, 197);
+          font-size: 2.5em;
+      }
+      .introdesc{
+          font-family: 'montserrat';
+          color:rgb(182, 190, 197) ;
+          font-size: 1.5em;
+      }
+      #experienceContainer{
+          margin-top: 100vh;
+          position: absolute;
+          background-color: slategray;
+          left: 0;
+          right: 0;  
+          text-align: center;
+          opacity: 0.9;
+      }
+      #experienceHeaderContainer{
+          text-align: center;
+      }
+      #experienceTitle{
+          width: 40%;
+          font-size: 1em;
+          border-bottom: rgb(182, 190, 197) 1px solid;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 30px;
+          font-family: 'Oxanium' ;
+          color:rgb(182, 190, 197)
+      }
+      .expNode{
+        width: 100%; text-align: justify;
+        padding-top: 50px;
+        height: 300px;
+        padding-bottom: 50px;
+      }
+      .expNodeLogo{
+          width: 30%;
+          height: auto;
+          display: inline-block;
+          text-align: center;
+          box-sizing: border-box;
+          padding: 10px;
+      }
+      .logo{
+        width: 50px; 
+        height: auto;
+        padding:20px ;
+        
+      }
+      .tinylogo{
+        width: 50px; 
+        height: auto;
+        padding:20px ; 
+      }
+
+      .expNodeContent{
+          width: 65%;
+          margin-right: 10%;
+          height: auto;
+          display: inline-block;
+          position: absolute;
+      }
+      .expNodeDate{
+          display: block;
+          text-align: left;
+          width: auto;
+          font-size: 1.2em;
+          padding-right: 20px;
+          font-family: 'Oxanium';
+          color:rgb(182, 190, 197)
+    
+      }
+      .expNodeHeader{
+          height: auto;
+          margin-bottom: 50px;
+          box-sizing: border-box;
+          overflow: visible;
+          border-bottom:  rgb(182, 190, 197) 1px solid;
+      }
+      .expNodeTitle{
+          display: inline-block;
+          position: absolute;
+          text-align: left;
+          right: 0;
+          font-size: 1.1em;
+          padding-right: 20px;
+          font-family: 'Oxanium';
+          color:rgb(182, 190, 197)
+      }
+      .expNodeDesc{
+          text-align:justify;
+          padding-right: 10px;
+          margin: 40px 10px 20px 0px;
+          color:rgb(182, 190, 197);
+          font-family: 'montserrat';
+          box-sizing: border-box;
+          font-size: 1em;
+      }
+    
+      #divider{
+          width: 90%;
+          border-top:  rgb(182, 190, 197) 2px solid;
+          margin-left: auto;
+          margin-right: auto;
+      }
+    
+      .SkillCategory{
+        border-bottom: 1px solid rgb(182, 190, 197);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+      }
+      .categoryHeader{
+        
+        font-size: 1.3em;
+        padding-right: 20px;
+        padding-top: 30px;
+        font-family: 'Oxanium';
+        color:rgb(182, 190, 197)
+      }
+      .fas, .far{
+        color:rgb(182, 190, 197) ;
+      }
+      .Item{
+          
+          display: inline-block;
+          padding: 0px 20px 0px 20px;
+          
+         
+     
+      }
+    .Item > h3{
+        font-size: 1.5em;
+        color:rgb(182, 190, 197) ;
+        font-family: 'Montserrat';
+    }
+    
+}
+
+/*********************************************************************************/
+@media only screen  and (min-width: 1650px) {
+body::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+#smallIntro{
+    display: none;
+}
+#NavBarDiv{
+   
+    position: fixed;
+    width: 100%;
+    height:50px;
+    left:0;
+    top:0;
+    right:0;
+    background-color: black;
+    text-align: center;
+   
+  
+}
+#MobileNav{
+    display: none;
+}
+.NavItem{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 200px;
+    color:whitesmoke;
+    padding-top: 15px;
+    font-family: "Oxanium";
+    
+    transition: 0.5s ease;
+    
+}
+
+
+.NavItem > a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.NavItem:hover{
+    border-bottom: whitesmoke 3px solid;
+    cursor: pointer;
+}
+#myVideo {
+        
+    position: fixed;
+    width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -15;
+ 
+  }
+
+  #mainview{
+      height: 100vh;
+      width:100vw;
+      left: 0;
+      top: 0;
+      position: fixed;
+      
+  }
+  #mainview.active {
+    opacity: 0;
+  }
+  #introContainer{
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      height: 60%;
+      width: 60%;
+      background-color: rgba(115, 130, 146,0.8);
+      border-radius: 20px;
+
+  }
+  #introPhoto{
+      height: 120%;
+      width: 40%;
+      display: inline-block;
+      border-radius: 20px;
+      transform: translate(-2%,-5%);
+  }
+  #photoMe{
+      height: 100%;
+      width: auto;
+      
+    
+      border-radius: 20px;
+      filter: drop-shadow();
+      -webkit-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+      -moz-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+      box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+  }
+  #introText{
+      box-sizing: border-box;
+    position: absolute;
+     display: inline-block;
+    padding: 50px;
+    
+    text-align: justify;
+
+  }
+  #NameTitle{
+width: auto;
+  }
+  #NameTitle{
+      font-family: 'Oxanium';
+      color: rgb(182, 190, 197);
+      font-size: 2.5em;
+  }
+  .introdesc{
+      font-family: 'montserrat';
+      color:rgb(182, 190, 197) ;
+      font-size: 1.5em;
+  }
+  #experienceContainer{
+      margin-top: 100vh;
+      position: absolute;
+      background-color: slategray;
+      left: 0;
+      right: 0;  
+      text-align: center;
+      opacity: 0.9;
+  }
+  #experienceHeaderContainer{
+      text-align: center;
+  }
+  #experienceTitle{
+      width: 40%;
+      font-size: 2em;
+      border-bottom: rgb(182, 190, 197) 1px solid;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 30px;
+      font-family: 'Oxanium' ;
+      color:rgb(182, 190, 197)
+  }
+  .expNode{
+    width: 100%; text-align: justify;
+    padding-top: 50px;
+  }
+  .expNodeLogo{
+      width: 30%;
+      height: auto;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 30px;
+  }
+  .logo{
+    width: 150px; 
+    height: auto;
+    padding:20px ;
+    
+  }
+  .tinylogo{
+    width: 200px; 
+    height: auto;
+    padding:20px ; 
+  }
+  .expNodeContent{
+      width: 65%;
+      margin-right: 10%;
+      height: auto;
+      display: inline-block;
+      position: absolute;
+  }
+  .expNodeDate{
+      display: inline-block;
+      text-align: left;
+      width: auto;
+      font-size: 1.8em;
+      padding-right: 20px;
+      font-family: 'Oxanium';
+      color:rgb(182, 190, 197)
+
+  }
+  .expNodeHeader{
+      height: 3em;
+      border-bottom:  rgb(182, 190, 197) 1px solid;
+  }
+  .expNodeTitle{
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      font-size: 1.8em;
+      padding-right: 20px;
+      font-family: 'Oxanium';
+      color:rgb(182, 190, 197)
+  }
+  .expNodeDesc{
+      text-align:justify;
+      padding-right: 20px;
+      color:rgb(182, 190, 197);
+      font-family: 'montserrat';
+      font-size: 1.4em;
+  }
+
+  #divider{
+      width: 90%;
+      border-top:  rgb(182, 190, 197) 2px solid;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .SkillCategory{
+    border-bottom: 1px solid rgb(182, 190, 197);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+  .categoryHeader{
+    
+    font-size: 1.8em;
+    padding-right: 20px;
+    padding-top: 30px;
+    font-family: 'Oxanium';
+    color:rgb(182, 190, 197)
+  }
+  .fas, .far{
+    color:rgb(182, 190, 197) ;
+  }
+  .Item{
+      
+      display: inline-block;
+      padding: 0px 20px 0px 20px;
+      
+     
+ 
+  }
+.Item > h3{
+    font-size: 2em;
+    color:rgb(182, 190, 197) ;
+    font-family: 'Montserrat';
+}
+
+}
+
