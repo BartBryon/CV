@@ -98,7 +98,7 @@
         border-radius: 20px;
         position: absolute;
         bottom: 10%;
-     
+        color: rgb(215, 224, 233);
         z-index:20;
         font-family: 'Montserrat';
         text-align: center;
@@ -256,7 +256,7 @@
       .Item{
           
           display: inline-block;
-          padding: 0px 20px 0px 20px;
+          padding: 40px 20px 0px 20px;
           
          
      
